@@ -18,6 +18,7 @@ A simple shell usually involves the following basic steps:
 
 The basic functionality of a simple shell can be extended by adding additional features, such as handling piping, I/O redirection, and background processing.
 
+
 > This is an ALX collaboration project on Shell. We were tasked to create a simple shell that mimics the Bash shell. Our shell shall be called **hsh**
 
 ## Project was completed using
@@ -156,6 +157,7 @@ $
 ### Variable Replacement
 
 **hsh** interprets the `$` character for variable replacement.
+
 
 #### $ENV_VARIABLE
 `ENV_VARIABLE` is substituted with its value.
