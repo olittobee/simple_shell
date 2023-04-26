@@ -4,7 +4,7 @@
  * print_alias - add, remove or show aliases
  * @data: struct for the program's data
  * @alias: name of the alias to be printed
- * Return: zero if sucess, or other number if its declared in the arguments
+ * Return: zero if success, or 0 if otherwise
  */
 int print_alias(data_of_program *data, char *alias)
 {
@@ -41,7 +41,7 @@ int print_alias(data_of_program *data, char *alias)
  * get_alias - add, remove or show aliases
  * @data: struct for the program's data
  * @name: name of the requested alias.
- * Return: zero if sucess, or other number if its declared in the arguments
+ * Return: zero if success, or other number if its declared in the arguments
  */
 char *get_alias(data_of_program *data, char *name)
 {
@@ -54,7 +54,7 @@ char *get_alias(data_of_program *data, char *name)
 	alias_length = str_length(name);
 
 	for (i = 0; data->alias_list[i]; i++)
-	{/* Iterates through the environ and check for coincidence of the varname */
+	{/* Iterates through environ to check for coincidence of the var_name */
 		if (str_compare(name, data->alias_list[i], alias_length) &&
 			data->alias_list[i][alias_length] == '=')
 		{/* returns the value of the key NAME=  when find it */
@@ -68,7 +68,7 @@ char *get_alias(data_of_program *data, char *name)
 
 /**
  * set_alias - add, or override alias
- * @alias_string: alias to be seted in the form (name='value')
+ * @alias_string: alias to be set at this form (name='value')
  * @data: struct for the program's data
  * Return: zero if sucess, or other number if its declared in the arguments
  */
