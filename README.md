@@ -8,6 +8,7 @@ A simple shell usually involves the following basic steps:
 
 2. Reading input: Once the prompt is displayed, the program waits for the user to enter a command. The input is usually read in as a string.
 
+
 3. Parsing input: After the user has entered a command, the shell parses the input to separate the command and its arguments. It usually does this by breaking up the input into individual words or tokens.
 
 4. Executing the command: Once the input has been parsed, the shell executes the command. This involves creating a new process to run the command and passing any necessary arguments to it.
